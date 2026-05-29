@@ -50,13 +50,15 @@ README como porta de entrada, `CLAUDE.md` + `AGENTS.md`, `.gitignore`,
 `.gitattributes`, `.github/` (PR + issue templates), este `SETUP_STRATEGY.md`.
 Sem `LICENSE` (decisão do dono). **Um commit semântico.**
 
-### Fase 1 — Taxonomia / scaffold do site ⏳ (aguarda OK)
-Criar o esqueleto durável: `index.html` + `assets/{css,js,img}/`. Estrutura que
-separa o ativo durável (conteúdo do site) de eventuais arquivos de processo.
+### Fase 1 — Taxonomia / scaffold do site ✅
+Esqueleto durável criado: `index.html` + `assets/{css,js,img}/` (com `style.css`,
+`main.js` e a pasta de imagens). Estrutura que separa o ativo durável (o site) do
+resto. É um ponto de partida — identidade visual e conteúdo a refinar.
 
-### Fase 2 — Convenções ⏳
-Já documentadas no `CLAUDE.md` e no `README.md` (kebab-case, padrão de commit,
-fluxo de PR). Frontmatter/metadados entram caso o site adote conteúdo estruturado.
+### Fase 2 — Convenções ✅
+Documentadas no `CLAUDE.md` e no `README.md` (kebab-case, padrão de commit em inglês,
+docs em português, fluxo de PR) e já aplicadas ao scaffold. Frontmatter/metadados
+entram caso o site adote conteúdo estruturado no futuro.
 
 ### Fase 3 — Higiene de git ⏳
 **Nada a executar hoje:** não há artefatos efêmeros, mídia pesada ou histórico a

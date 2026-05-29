@@ -14,15 +14,21 @@ O GitHub Pages publica o conteúdo da raiz da branch de publicação diretamente
 `https://1marcelserrano.github.io` — ou seja, **o que está versionado aqui é o site
 no ar**.
 
-> **Estado atual (verificável):** a fundação do repositório (esta documentação,
-> convenções e configuração) está em pé. O **site em si ainda não foi montado** — o
-> esqueleto HTML/CSS/JS é a próxima fase. Veja o roadmap em
-> [`SETUP_STRATEGY.md`](./SETUP_STRATEGY.md).
+> **Estado atual (verificável):** a fundação (documentação, convenções, configuração)
+> e o **esqueleto inicial do site** estão em pé. O scaffold é um ponto de partida —
+> a identidade visual e o conteúdo devem ser refinados a partir daqui. Veja o roadmap
+> em [`SETUP_STRATEGY.md`](./SETUP_STRATEGY.md).
 
 ## Mapa do repositório
 
 ```
 .
+├── index.html           ← página inicial (a porta do site)
+├── assets/
+│   ├── css/             ← estilos (style.css)
+│   ├── js/              ← scripts (main.js)
+│   └── img/             ← imagens e mídia
+│
 ├── README.md            ← você está aqui: porta de entrada + mapa
 ├── CLAUDE.md            ← contexto para agentes de IA (propósito, como rodar, o que não commitar)
 ├── AGENTS.md            ← ponteiro para o CLAUDE.md
@@ -30,16 +36,6 @@ no ar**.
 ├── .gitignore           ← o que nunca entra no versionamento
 ├── .gitattributes       ← normalização de fim de linha + tratamento de binários
 └── .github/             ← templates de PR e issues
-```
-
-Quando o site for montado (Fase 1), a estrutura durável será:
-
-```
-├── index.html           ← página inicial (a porta do site)
-└── assets/
-    ├── css/             ← estilos
-    ├── js/              ← scripts
-    └── img/             ← imagens e mídia
 ```
 
 ## Como visualizar localmente
