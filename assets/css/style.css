@@ -1,0 +1,85 @@
+/* MSCREATIVE.SYSTEMS™ — base styles
+   Estrutura inicial. Refine a identidade visual aqui. */
+
+:root {
+  --bg: #0a0a0a;
+  --fg: #fafafa;
+  --muted: #8a8a8a;
+  --accent: #fafafa;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.tm {
+  font-size: 0.5em;
+  vertical-align: super;
+}
+
+/* Header */
+.site-header {
+  padding: 1.5rem 2rem;
+}
+
+.brand {
+  color: var(--fg);
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  font-size: 1rem;
+}
+
+/* Hero */
+main {
+  flex: 1;
+  display: flex;
+}
+
+.hero {
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero__title {
+  font-size: clamp(2rem, 8vw, 5rem);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.hero__tagline {
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Footer */
+.site-footer {
+  padding: 1.5rem 2rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  text-align: center;
+}
